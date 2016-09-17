@@ -1,6 +1,6 @@
 # HashCracker -  Crack a Hash by BruteForce.
 
-ZipCracker est un outil en Python de crack qui utilise le bruteforce avec un dictionnaire.
+HashCracker est un outil en Python qui utilise le bruteforce pour craker un hashage.
 
 ### Prerequisities
 
@@ -19,37 +19,36 @@ usage: hashcracker.py [-h] [-c] [-k KEY] [-m MSGDGST] [-t] [-p PASSPHRASE]
 
 ```
 
-Exemple, Crack un hash sha1: <br />
-* Passphrase: crypto <br />
-* Hash:       44a9713350e53858f058463d4bf7f1e542d9ca4b <br />
+Exemple, Cracker un hash sha1: <br />
+* Passphrase: test <br />
+* Hash:       a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 <br />
 
 
 ```
-$ nano test.txt
-  Voici un petit test.
+$ python hashcracker.py -c -k "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3" -m sha1
 
-$ zip --encrypt test.zip test.txt
-  Enter password:
-  Verify password:
-     adding: test.txt (stored 0%)
-$ ls
-  test.txt  test.zip  zipcracker.py
-```
+  Password is:      test
+  Hash is:          a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 
-Lancement du crack:
 
 ```
-$ python zipcracker.py -f test.zip -w word_list
-(2994 / 3107) |  96.00%
+## Running the tests
 
-Password cracked: nirvana
+Il est possible de faire des tests, exemple avec un hash md5:
 
-Took 0.562439 seconds to crack the password. That is, 5325 attempts per second.
 ```
+$ python hashcracker.py -t -p "foo" -m md5                                 
+  Testing password: foo
+  With hash:        acbd18db4cc2f85cedef654fccc4a4d8
+
+  Password is:      foo
+  Hash is:          acbd18db4cc2f85cedef654fccc4a4d8
+```
+
 
 ## Deployment
 
-ZipCracker est compatible sur:
+HashCracker est compatible sur:
 
 - Linux
 
@@ -59,4 +58,5 @@ ZipCracker est compatible sur:
 
 ## Acknowledgments
 
+* Cryptographie
 * Python
