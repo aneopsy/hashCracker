@@ -20,8 +20,8 @@ usage: hashcracker.py [-h] [-c] [-k KEY] [-m MSGDGST] [-t] [-p PASSPHRASE]
 ```
 
 Exemple, Crack un hash sha1: <br />
-Passphrase: crypto <br />
-Hash:       44a9713350e53858f058463d4bf7f1e542d9ca4b <br />
+* Passphrase: crypto <br />
+* Hash:       44a9713350e53858f058463d4bf7f1e542d9ca4b <br />
 
 
 ```
