@@ -1,6 +1,6 @@
 # HashCracker -  Crack a Hash by BruteForce.
 
-HashCracker est un outil en Python qui utilise le bruteforce pour craker un hashage.
+HashCracker est un outil en Python qui utilise le bruteforce pour cracker un hashage.
 
 ### Prerequisities
 
