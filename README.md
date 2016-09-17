@@ -19,9 +19,9 @@ usage: hashcracker.py [-h] [-c] [-k KEY] [-m MSGDGST] [-t] [-p PASSPHRASE]
 
 ```
 
-Exemple, Crack un hash sha1:
-Passphrase: crypto
-Hash:       44a9713350e53858f058463d4bf7f1e542d9ca4b
+Exemple, Crack un hash sha1: \n
+Passphrase: crypto \n
+Hash:       44a9713350e53858f058463d4bf7f1e542d9ca4b\n
 
 
 ```
